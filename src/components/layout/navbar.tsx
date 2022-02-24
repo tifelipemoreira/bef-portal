@@ -35,7 +35,7 @@ export default function NavBar() {
                         </li>
                         {/* Dropdown */}
                         <li className="relative">
-                            <button onMouseEnter={() => setOpenDropdown(true)} className={`${style.a} outline-none focus:outline-none`}>Dropdown </button>
+                            <button onMouseEnter={() => setOpenDropdown(!openDropdown)} className={`${style.a} outline-none focus:outline-none`}>Dropdown </button>
                             {/* Dropdown Menu */}
                             <div className={openDropdown ? "lg:absolute bg-white right-0 rouded-md p-2 top-12" : "hidden"}>
                                 <ul onMouseEnter={() => setOpenDropdown(true)}  onMouseLeave={() => setOpenDropdown(false)}  className="space-y-2 lg:w-24">
